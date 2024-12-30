@@ -45,18 +45,20 @@ body {
   min-height: 100vh;
   background: url(assets/images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
+  background-position: top;
   background-size: 100%;
   background-origin: border-box;
   background-color: hsl(275, 100%, 97%);
   font-family: "Work Sans", sans-serif;
-  display: flex;
-  align-items: center;
+  /*  display: flex;
+  align-items: center;*/
 }
 .card {
   width: min(calc(100% - 24px), 600px);
   background-color: hsl(0, 0%, 100%);
-  margin-inline: auto;
+  margin: 8rem auto;
   padding: 2.4rem;
+  border-radius: 10px;
 }
 @media screen and (min-width: 375px) {
   .card {
@@ -111,4 +113,10 @@ main img {
 .line {
   height: 2px;
   background-color: hsl(275, 100%, 97%);
+}
+
+@media screen and (min-width: 775px) {
+  body {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+  }
 }
