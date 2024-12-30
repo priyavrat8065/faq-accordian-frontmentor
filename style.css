@@ -68,6 +68,12 @@ body {
 .active {
   display: none;
 }
+.mb-28 {
+  margin-bottom: 2.8rem;
+}
+.mb-22 {
+  margin-bottom: 2.2rem;
+}
 
 /* FAQs HEADER CODE */
 .faqs-header {
@@ -90,6 +96,19 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
 }
+/* PLUS MINUS ICON */
 main img {
   max-width: 26px;
+}
+
+/* FAQs ANSWERS CODE */
+.faqs-ans {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* LINE CSS CODE */
+.line {
+  height: 2px;
+  background-color: hsl(275, 100%, 97%);
 }
