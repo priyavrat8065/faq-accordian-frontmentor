@@ -1,24 +1,35 @@
+//jshint esversion:6
+//jshint  node:true
+//jshint browser:true
 "use strict";
 const showbtns = document.querySelectorAll(".show-ans-btn");
 const hidebtns = document.querySelectorAll(".hide-ans-btn");
+const showlinks = document.querySelectorAll(".faqs-ques a");
+const showHideAns = (counter) => {
+  // Toggle the FAQs answer
+  document.querySelectorAll(".faqs-ans")[counter].classList.toggle("hidden");
+  // Toggle the minus icon
+  document
+    .querySelectorAll(".hide-ans-btn")
+    [counter].classList.toggle("hidden");
+  // Toggle the plus icon
+  document
+    .querySelectorAll(".show-ans-btn")
+    [counter].classList.toggle("hidden");
+};
 for (let i = 0; i < showbtns.length; i++) {
-  showbtns[i].addEventListener("click", function () {
-    // shows the FAQs answer
-    document.querySelectorAll(".faqs-ans")[i].classList.remove("hidden");
-    // display the minus icon
-    document.querySelectorAll(".hide-ans-btn")[i].classList.remove("hidden");
-    // removes the plus icon
-    document.querySelectorAll(".show-ans-btn")[i].classList.add("hidden");
+  showbtns[i].addEventListener("click", () => {
+    showHideAns(i);
   });
 }
 
 for (let i = 0; i < hidebtns.length; i++) {
-  hidebtns[i].addEventListener("click", function () {
-    // // hide the FAQs answer
-    document.querySelectorAll(".faqs-ans")[i].classList.add("hidden");
-    // display the plus icon
-    document.querySelectorAll(".show-ans-btn")[i].classList.remove("hidden");
-    // removes the minus icon
-    document.querySelectorAll(".hide-ans-btn")[i].classList.add("hidden");
+  hidebtns[i].addEventListener("click", () => {
+    showHideAns(i);
+  });
+}
+for (let i = 0; i < showlinks.length; i++) {
+  showlinks[i].addEventListener("click", () => {
+    showHideAns(i);
   });
 }
