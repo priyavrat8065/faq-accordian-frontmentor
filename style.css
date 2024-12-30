@@ -87,6 +87,7 @@ body {
   gap: 2.6rem;
 }
 .faqs-heading {
+  color: hsl(292, 42%, 14%);
   font-size: 5.6rem;
   font-weight: 700;
 }
@@ -101,6 +102,16 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
 }
+.faqs-ques a:any-link {
+  text-decoration: none;
+  color: hsl(292, 42%, 14%);
+  transition: all 0.3s ease-in-out;
+}
+.faqs-ques a:hover,
+.faqs-ques a:focus {
+  color: hsl(281, 83%, 54%);
+  outline: none;
+}
 /* PLUS MINUS ICON */
 main img {
   max-width: 26px;
@@ -108,6 +119,7 @@ main img {
 
 /* FAQs ANSWERS CODE */
 .faqs-ans {
+  color: hsl(292, 16%, 49%);
   font-size: 1.6rem;
   font-weight: 400;
 }
