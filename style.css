@@ -61,3 +61,19 @@ body {
     width: min(calc(100% - 48px), 600px);
   }
 }
+
+/* UTILITY CLASSES CODE */
+.active {
+  display: none;
+}
+
+/* FAQs HEADER CODE */
+.faqs-header {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+}
+.faqs-heading {
+  font-size: 5.6rem;
+  font-weight: 700;
+}
