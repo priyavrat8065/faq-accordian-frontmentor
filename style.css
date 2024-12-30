@@ -12,3 +12,24 @@ img {
 html {
   font-size: 62.5%;
 }
+
+/* GENERAL CODE */
+body {
+  min-height: 100vh;
+  background: url(assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: border-box;
+  background-color: hsl(275, 100%, 97%);
+}
+.card {
+  width: min(calc(100% - 24px), 600px);
+  background-color: hsl(0, 0%, 100%);
+  margin-inline: auto;
+  padding: 2.4rem;
+}
+@media screen and (min-width: 375px) {
+  .card {
+    width: min(calc(100% - 48px), 600px);
+  }
+}
