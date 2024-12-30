@@ -49,6 +49,8 @@ body {
   background-origin: border-box;
   background-color: hsl(275, 100%, 97%);
   font-family: "Work Sans", sans-serif;
+  display: flex;
+  align-items: center;
 }
 .card {
   width: min(calc(100% - 24px), 600px);
@@ -76,4 +78,18 @@ body {
 .faqs-heading {
   font-size: 5.6rem;
   font-weight: 700;
+}
+/* FAQs QUESTION CODE */
+.faqs-ques-pl-minus {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  justify-content: space-between;
+}
+.faqs-ques {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+main img {
+  max-width: 26px;
 }
