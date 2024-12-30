@@ -67,14 +67,17 @@ body {
 }
 
 /* UTILITY CLASSES CODE */
-.active {
+/*.unhide-ans {
   display: none;
-}
+}*/
 .mb-28 {
   margin-bottom: 2.8rem;
 }
 .mb-22 {
   margin-bottom: 2.2rem;
+}
+.hidden {
+  display: none;
 }
 
 /* FAQs HEADER CODE */
