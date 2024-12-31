@@ -19,17 +19,17 @@ const showHideAns = (counter) => {
 };
 for (let i = 0; i < showbtns.length; i++) {
   showbtns[i].addEventListener("click", () => {
-    showHideAns(i);
+    setTimeout(showHideAns, 100, i);
   });
 }
 
 for (let i = 0; i < hidebtns.length; i++) {
   hidebtns[i].addEventListener("click", () => {
-    showHideAns(i);
+    setTimeout(showHideAns, 100, i);
   });
 }
 for (let i = 0; i < showlinks.length; i++) {
   showlinks[i].addEventListener("click", () => {
-    showHideAns(i);
+    setTimeout(showHideAns, 100, i);
   });
 }
